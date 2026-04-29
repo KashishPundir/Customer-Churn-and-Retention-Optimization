@@ -92,9 +92,7 @@ Raw data was transformed into **more meaningful and informative features**.
 
 SHAP explains predictions as:
 
-\[
-Prediction = Base\ Value + \sum Feature\ Contributions
-\]
+Prediction = Base Value + Σ (Feature Contributions)
 
 ### 🔍 KEY INSIGHT:
 - ~76% of prediction driven by **TotalOrder**
@@ -170,9 +168,7 @@ Used to evaluate uplift models.
 Accuracy alone is not enough.
 
 ### FORMULA:
-\[
-ROI = \frac{Incremental\ Gain - Cost}{Cost}
-\]
+ROI = (Incremental Gain - Cost) / Cost
 
 ### INSIGHT:
 - Wrong targeting = loss  
@@ -197,36 +193,6 @@ ROI = \frac{Incremental\ Gain - Cost}{Cost}
 ### 4. BUSINESS GAP
 - Model predicts churn  
 - Does NOT optimize intervention decisions  
-
----
-
-## ⚠️ LIMITATIONS
-
-- Correlation-based (no causal inference)  
-- No implemented uplift model (conceptual only)  
-- Feature imbalance  
-- Limited interaction modeling  
-
----
-
-## 🧠 FUTURE IMPROVEMENTS
-
-### 🔧 MODELING
-- Add uplift modeling (causal ML)  
-- Improve feature diversity  
-- Apply regularization  
-
----
-
-### 📊 EXPERIMENTATION
-- Simulate A/B testing  
-- Add treatment data  
-
----
-
-### 💰 BUSINESS OPTIMIZATION
-- Integrate ROI into predictions  
-- Target only high-impact users  
 
 ---
 
@@ -263,13 +229,7 @@ ROI = \frac{Incremental\ Gain - Cost}{Cost}
 
 ```bash
 # Clone repository
-git clone <your-repo-link>
-
-# Navigate
-cd <repo-name>
-
-# Install dependencies
-pip install -r requirements.txt
+git clone https://github.com/KashishPundir/Customer-Churn-and-Retention-Optimization.git
 
 # Run notebook
 jupyter notebook
